@@ -1,3 +1,29 @@
+// import Navbar from "./components/Navbar";
+// import HeroSection from "./components/HeroSection";
+// import FeatureSection from "./components/FeatureSection";
+// import Workflow from "./components/Workflow";
+// import Footer from "./components/Footer";
+// import Pricing from "./components/Pricing";
+// import Testimonials from "./components/Testimonials";
+
+// const App = () => {
+//   return (
+//     <>
+//       <Navbar />
+//       <div className="max-w-7xl mx-auto pt-20 px-6">
+//         <HeroSection />
+//         <FeatureSection />
+//         <Workflow />
+//         <Pricing />
+//         <Testimonials />
+//         <Footer />
+//       </div>
+//     </>
+//   );
+// };
+
+// export default App;
+
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import FeatureSection from "./components/FeatureSection";
@@ -11,11 +37,26 @@ const App = () => {
     <>
       <Navbar />
       <div className="max-w-7xl mx-auto pt-20 px-6">
-        <HeroSection />
-        <FeatureSection />
-        <Workflow />
-        <Pricing />
-        <Testimonials />
+      <div id="hero-section" className="scroll-mt-20">
+  <HeroSection />
+</div>
+
+<div id="features-section" className="scroll-mt-20">
+  <FeatureSection />
+</div>
+
+<div id="workflow-section" className="scroll-mt-20">
+  <Workflow />
+</div>
+
+<div id="pricing-section" className="scroll-mt-20">
+  <Pricing />
+</div>
+
+<div id="testimonials-section" className="scroll-mt-20">
+  <Testimonials />
+</div>
+
         <Footer />
       </div>
     </>
@@ -23,3 +64,4 @@ const App = () => {
 };
 
 export default App;
+

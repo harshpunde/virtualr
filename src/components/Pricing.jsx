@@ -1,20 +1,124 @@
+// import { CheckCircle2 } from "lucide-react";
+// import { pricingOptions } from "../constants";
+
+// const Pricing = () => {
+//   return (
+//     <div className="mt-20">
+//       <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-8 tracking-wide">
+//         Pricing
+//       </h2>
+//       <div className="flex flex-wrap">
+//         {pricingOptions.map((option, index) => (
+//           <div key={index} className="w-full sm:w-1/2 lg:w-1/3 p-2">
+//             <div className="p-10 border border-neutral-700 rounded-xl">
+//               <p className="text-4xl mb-8">
+//                 {option.title}
+//                 {option.title === "Pro" && (
+//                   <span className="bg-gradient-to-r from-orange-500 to-red-400 text-transparent bg-clip-text text-xl mb-4 ml-2">
+//                     (Most Popular)
+//                   </span>
+//                 )}
+//               </p>
+//               <p className="mb-8">
+//                 <span className="text-5xl mt-6 mr-2">{option.price}</span>
+//                 <span className="text-neutral-400 tracking-tight">/Month</span>
+//               </p>
+//               <ul>
+//                 {option.features.map((feature, index) => (
+//                   <li key={index} className="mt-8 flex items-center">
+//                     <CheckCircle2 />
+//                     <span className="ml-2">{feature}</span>
+//                   </li>
+//                 ))}
+//               </ul>
+//               <a
+//                 href="#"
+//                 className="inline-flex justify-center items-center text-center w-full h-12 p-5 mt-20 tracking-tight text-xl hover:bg-orange-900 border border-orange-900 rounded-lg transition duration-200"
+//               >
+//                 Subscribe
+//               </a>
+//             </div>
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Pricing;
+
+
+// import { CheckCircle2 } from "lucide-react";
+// import { pricingOptions } from "../constants";
+
+// const Pricing = () => {
+//   return (
+//     <div className="mt-20">
+//       <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-8 tracking-wide">
+//         Pricing
+//       </h2>
+//       <div className="flex flex-wrap">
+//         {pricingOptions.map((option, index) => (
+//           <div key={index} className="w-full sm:w-1/2 lg:w-1/3 p-2">
+//             <div className="p-10 border border-neutral-700 rounded-xl">
+//               <p className="text-4xl mb-8">
+//                 {option.title}
+//                 {option.title === "Pro" && (
+//                   <span className="bg-gradient-to-r from-green-500 to-green-400 text-transparent bg-clip-text text-xl mb-4 ml-2">
+//                     (Most Popular)
+//                   </span>
+//                 )}
+//               </p>
+//               <p className="mb-8">
+//                 <span className="text-5xl mt-6 mr-2">{option.price}</span>
+//                 <span className="text-neutral-400 tracking-tight">/Month</span>
+//               </p>
+//               <ul>
+//                 {option.features.map((feature, index) => (
+//                   <li key={index} className="mt-8 flex items-center">
+//                     <CheckCircle2 />
+//                     <span className="ml-2">{feature}</span>
+//                   </li>
+//                 ))}
+//               </ul>
+//               <a
+//                 href="#"
+//                 className="inline-flex justify-center items-center text-center w-full h-12 p-5 mt-20 tracking-tight text-xl hover:bg-green-900 border border-green-900 rounded-lg transition duration-200"
+//               >
+//                 Subscribe
+//               </a>
+//             </div>
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Pricing;
+
+
 import { CheckCircle2 } from "lucide-react";
 import { pricingOptions } from "../constants";
 
 const Pricing = () => {
   return (
     <div className="mt-20">
-      <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-8 tracking-wide">
+      <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-8 tracking-wide animate-fadeInDown">
         Pricing
       </h2>
       <div className="flex flex-wrap">
         {pricingOptions.map((option, index) => (
-          <div key={index} className="w-full sm:w-1/2 lg:w-1/3 p-2">
-            <div className="p-10 border border-neutral-700 rounded-xl">
+          <div
+            key={index}
+            className="w-full sm:w-1/2 lg:w-1/3 p-2 animate-fadeInUp"
+            style={{ animationDelay: `${index * 0.1}s` }} // Delay for staggered effect
+          >
+            <div className="p-10 border border-neutral-700 rounded-xl transform transition-all duration-300 hover:shadow-lg hover:scale-105">
               <p className="text-4xl mb-8">
                 {option.title}
                 {option.title === "Pro" && (
-                  <span className="bg-gradient-to-r from-orange-500 to-red-400 text-transparent bg-clip-text text-xl mb-4 ml-2">
+                  <span className="bg-gradient-to-r from-green-500 to-green-400 text-transparent bg-clip-text text-xl mb-4 ml-2">
                     (Most Popular)
                   </span>
                 )}
@@ -25,15 +129,15 @@ const Pricing = () => {
               </p>
               <ul>
                 {option.features.map((feature, index) => (
-                  <li key={index} className="mt-8 flex items-center">
-                    <CheckCircle2 />
+                  <li key={index} className="mt-8 flex items-center animate-bounce">
+                    <CheckCircle2 className="text-green-500" />
                     <span className="ml-2">{feature}</span>
                   </li>
                 ))}
               </ul>
               <a
                 href="#"
-                className="inline-flex justify-center items-center text-center w-full h-12 p-5 mt-20 tracking-tight text-xl hover:bg-orange-900 border border-orange-900 rounded-lg transition duration-200"
+                className="inline-flex justify-center items-center text-center w-full h-12 p-5 mt-20 tracking-tight text-xl hover:bg-green-900 border border-green-900 rounded-lg transition duration-200 transform hover:scale-110"
               >
                 Subscribe
               </a>
