@@ -81,9 +81,9 @@ const Workflow = () => {
     <div className="mt-20">
       {/* Heading with slide-down animation */}
       <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center mt-6 tracking-wide animate-fadeInDown">
-        Accelerate your{" "}
+        Ensuring your{" "}
         <span className="bg-gradient-to-r from-green-500 to-green-800 text-transparent bg-clip-text">
-          coding workflow.
+          Online Presence.
         </span>
       </h2>
 

@@ -57,7 +57,7 @@ import logo from "../assets/logo.png";
 
 const HeroSection = () => {
   return (
-    <div className="flex flex-col items-center mt-6 lg:mt-20">
+    <div className="flex flex-col items-center mt-6 lg:mt-2">
       <h1 className="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">
         H.K DEVELOPMENTS 
         <span className="bg-gradient-to-r from-green-500 to-green-800 text-transparent bg-clip-text">
@@ -65,7 +65,7 @@ const HeroSection = () => {
         </span>
       </h1>
       <p className="mt-10 text-lg text-center text-neutral-500 max-w-4xl">
-        Welcome to my corner of the web! I'm a passionate MERN developer dedicated to creating dynamic and responsive web applications. Let’s bring your ideas to life with cutting-edge technology and innovative design!
+      Welcome to our corner of the web! We are passionate MERN developers dedicated to creating dynamic and responsive web applications. Together, let’s bring your ideas to life with cutting-edge technology and innovative design!
       </p>
       <div className="flex justify-center my-10">
         <a
@@ -78,7 +78,7 @@ const HeroSection = () => {
           Documentation
         </a>
       </div>
-      <div className="flex mt-10 justify-center">
+      <div className="flex mt-6 justify-center">
         <video
           autoPlay
           loop

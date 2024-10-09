@@ -104,7 +104,7 @@ import { pricingOptions } from "../constants";
 const Pricing = () => {
   return (
     <div className="mt-20">
-      <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-8 tracking-wide animate-fadeInDown">
+      <h2 className=" text-green-500 text-3xl sm:text-5xl lg:text-6xl text-center my-8 tracking-wide animate-fadeInDown">
         Pricing
       </h2>
       <div className="flex flex-wrap">

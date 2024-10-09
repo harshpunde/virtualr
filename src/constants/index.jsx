@@ -69,7 +69,7 @@ export const features = [
     icon: <Fingerprint />,
     text: "Multi-Platform Compatibility",
     description:
-      "Build  applications that run seamlessly across multiple platforms, including mobile, desktop, and VR headsets.",
+      "Build  applications that run seamlessly across multiple platforms, including mobile, desktop.",
   },
   {
     icon: <ShieldHalf />,
@@ -87,7 +87,7 @@ export const features = [
     icon: <PlugZap />,
     text: "Collaboration Tools",
     description:
-      "Work together with your team in real-time on VR projects, enabling seamless collaboration and idea sharing.",
+      "Work together with your team in real-time on projects, enabling seamless collaboration and idea sharing.",
   },
   {
     icon: <GlobeLock />,
@@ -122,24 +122,24 @@ export const features = [
 
 export const checklistItems = [
   {
-    title: "Code merge made easy",
+    title: "Custom Tailored Solutions",
     description:
-      "Track the performance of your apps and gain insights into user behavior.",
+      "We create websites that are specifically designed to meet your business needs, ensuring a unique online presence that stands out from the competition.",
   },
   {
-    title: "Review code without worry",
+    title: "Enhanced User Experience",
     description:
-      "Track the performance of your apps and gain insights into user behavior.",
+      "Our websites prioritize user-friendly navigation and engaging designs, resulting in improved customer satisfaction and retention.",
   },
   {
-    title: "AI Assistance to reduce time",
+    title: "Mobile Responsiveness",
     description:
-      "Track the performance of your apps and gain insights into user behavior.",
+      "Our websites are fully optimized for mobile devices, ensuring that your customers have a seamless experience no matter how they access your site.",
   },
   {
-    title: "Share work in minutes",
+    title: "Ongoing Support and Maintenance",
     description:
-      "Track the performance of your apps and gain insights into user behavior.",
+      "We provide continuous support and updates, helping you adapt to changing market trends and ensuring your website remains effective in driving growth.",
   },
 ];
 
